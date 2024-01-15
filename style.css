@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-bar {
+    width: 100%;
+    height: 88px;
+    flex-shrink: 0;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.welcome-text {
+    color: black;
+    font-family: HelverticaNeue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.google-button {
+    width: 228px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: black;
+    color: yellow;
+    font-family: HelverticaNeue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trouble-text {
+    color: black;
+    font-family: HelverticaNeue;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+}
+
+.or-text {
+    color: #BBB;
+    font-family: HelverticaNeue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.email-input,
+.password-input {
+    width: 250px;
+    background: transparent;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.email-input input,
+.password-input input {
+    width: 100%;
+    height: 2px;
+    border: none;
+    border-bottom: 1px solid #BBB;
+    background: transparent;
+    color: #BBB;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.email-input,
+.password-input {
+    width: 250px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.email-input input,
+.password-input input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #BBB;
+    background: transparent;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    /* Remove the input outline when focused */
+}
+
+.email-input label,
+.password-input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.email-input input:focus+label,
+.password-input input:focus+label,
+.email-input input:valid+label,
+.password-input input:valid+label {
+    top: -15px;
+    font-size: 10px;
+    color: #BBB;
+}
+
+.forget-password-link {
+    color: #0D46D9;
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11.73px;
+    right: 75px;
+    top: calc(100% - 190px);
+    position: absolute;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 228px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    background: #BBB;
+    color: white;
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+        background: yellow;
+        color: black;
+        border: 2px solid transparent;
+    }
+
+    &:active {
+        background: yellow;
+        color: black;
+        border: 2px solid transparent;
+    }
+}
+
+.signup-text {
+    color: black;
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signup-info {
+    color: #626262;
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    right: 430px;
+    z-index: 2;
+}
